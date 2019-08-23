@@ -1,0 +1,6 @@
+.my-box{
+  padding: 0 20px;
+}
+.my-title{
+  font-size: 10pt
+}

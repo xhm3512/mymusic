@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+<image src='../image/share.png' mode='widthFix'></image>
+</view>
+
