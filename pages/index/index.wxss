@@ -1,7 +1,152 @@
+.containerBox{
+height: 100%;
+  width: 100%;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  flex-wrap: wrap;
+}
+.flexColumn{
+   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}  
+.flexCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+}
+.containerSwiper{
+  height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+/* padding: 200rpx 0; */
+box-sizing: border-box;
 
-.say-hellow{
-  margin-bottom: 20px;
-  color: rgb(141, 90, 90);
-  font-size: 16px;
-  font-weight: bold;
+}
+.ddd{
+  width: 100%;
+  background: #1296db;
+  overflow: hidden;
+}
+.musicSearch{
+  width: 90%;
+  height: 50rpx;
+  background: hsla(201, 47%, 78%, 0.637);
+  border-radius: 20rpx;
+  margin: 10px auto 30rpx;
+  color: #fff;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+}
+.musicIconBox{
+  margin: 20rpx 0;
+}
+.iconBox{
+  width: 30%;
+  margin: 20rpx 0;
+}
+.iconItemBox{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background: rgb(240, 240, 234);
+  margin: 0 auto;
+}
+.iconImg{
+  width: 60rpx;
+  height: 60rpx;
+  
+}
+.iconText{
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.musicNewTitle{
+  font-size: 28rpx;
+  margin: 30rpx 20rpx 20rpx 30rpx;
+  position: relative;
+}
+.musicNewTitle::after{
+  content: "";
+  position: absolute;
+  left: -14rpx;
+  top:0;
+  width: 8rpx;
+  height: 36rpx;
+  background: #1296db;
+}
+.musicItem{
+   width: 750rpx;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-direction: row;
+  
+   color: #fff;
+}
+.listImg{
+  width: 96%;
+  height: 260rpx;
+  border-radius: 6rpx;
+  margin:0 2%;
+}
+.musicNewItem{
+  display: flex;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  flex-direction: column;
+}
+.musicNewList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  margin: 10rpx 0 10rpx 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid rgb(226, 224, 224);
+}
+.addMusic{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.listNewImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  margin:0 20rpx
+}
+
+ .author{
+font-size: 24rpx;
+  }
+  .musicTitle{
+    font-size: 22rpx;
+    color: rgb(212, 211, 211);
+  }
+  .commentsIcon{
+    width: 20rpx;
+    height: 20rpx;
+  }
+.commentsText{
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  color: rgb(212, 211, 211);
+}
+.page-body{
+  width: 100%;
 }

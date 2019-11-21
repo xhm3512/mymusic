@@ -5,20 +5,26 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "8090后的童年",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "MY乐库",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar":{
-    "color":"pink",
-    "selectedColor": "#11cd6e",
+    "color":"#000000",
+    "selectedColor": "#1296db",
+    "backgroundColor":"#FFF",  
       "borderStyle": "black",
     "list":[{
+      "iconPath": "/images/index-1.png",
+      "selectedIconPath": "/images/index-2.png", 
       "pagePath": "pages/index/index",
       "text": "首页"
     },
     {
+      "iconPath": "/images/my-1.png",
+      "selectedIconPath": "/images/my-2.png",
+      
       "pagePath": "pages/my/my",
       "text": "我的"
     }]

@@ -1,5 +1,59 @@
 <!--index.wxml-->
-<view class="container">
-<image src='../image/share.png' mode='widthFix'></image>
+<view class="containerBox">
+  <view class="ddd">
+    <!-- 搜索 -->
+    <input class="musicSearch" value="搜索 🔍"></input>
+    <!-- 轮播图 -->
+    <view class="containerSwiper">
+      <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{swiperList}}" wx:key="*this">
+              <swiper-item>
+                <!-- <view class="swiper-item {{item}}"></view> -->
+                <image src="{{item.imgUrl}}" class="listImg" />
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
+<!-- icon -->
+<view class="flexColumn musicIconBox">
+  <view class="flexRow">
+    <view class="flexColumn iconBox" wx:for="{{iconList}}" wx:key="index" >
+      <block wx:if="{{index<6}}">
+      <view class="iconItemBox flexCenter" style="{{item.style}}">
+        <image class="iconImg" src="{{item.imgUrl}}"></image>
+      </view>
+      <text class="iconText">{{item.text}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+<!-- 新歌速递 -->
+<view>
+  <view class="musicNewTitle">新歌速递</view>
+  <view class="musicNewItem" wx:for="{{videoList}}" wx:key="index" wx:for-item="item">
+    <view class="musicNewList" wx:for="{{item.content}}" wx:key="index" wx:for-item="list">
+      <image class="addMusic" src="./images/add_square.png"></image>
+      <view class="flexRow">
+        <image src="{{list.pic_small}}" class="listNewImg" />
+        <view class="flexColumn">
+          <view class="author">{{list.author}}</view>
+          <view class="musicTitle">{{list.album_title}}</view>
+          <view class="flexRow">
+            <image class="commentsIcon" src="./images/pl.png"></image>
+            <view class="commentsText">{{list.song_id}}</view>
+          </view>
+        </view>
 
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <!-- <view>热门歌单</view> -->
+</view>

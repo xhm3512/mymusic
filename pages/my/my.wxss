@@ -1,6 +1,51 @@
 .my-box{
-  padding: 0 20px;
+  padding: 0 20rpx;
+}
+.my-item{
+margin-bottom: 20rpx;
 }
 .my-title{
-  font-size: 10pt
+  font-size: 28rpx;
+  
+}
+
+
+.user-box{
+  height: 180rpx; 
+  text-align: left
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto{
+  text-align: center
+}
+.img-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+    width: 550rpx;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+    padding: 10px;
+    border: 1px solid #c48513;
+  }
+  .img-img{
+    width: 500rpx;
+  }
+.img-descrip{
+   margin-bottom: 20rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  color: #c48513;
 }
